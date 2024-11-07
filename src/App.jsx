@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Cards from '../src/Componentes/cards'
+import Cards from '../src/componentes/Cards'
 import './App.css';
 
 
