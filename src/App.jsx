@@ -4,13 +4,13 @@ import './App.css';
 
 
 function App() {
-  const [characters, setCharacters] = useState([]);
+  const [characters, Characters] = useState([]);
 
   const setlist = async () => {
     try {
       const response = await fetch('https://rickandmortyapi.com/api/character');
       const personajes = await response.json();
-      setCharacters(personajes.results); // Suponemos que contiene la lista de personajes
+      Characters(personajes.results); 
       console.log('Los personajes son: ', personajes.results);
     } catch (error) {
       console.error('Error:', error.message);
@@ -18,7 +18,7 @@ function App() {
   };
 
   useEffect(() => {
-    setlist(); // Llama a `setlist` cuando el componente se monta
+    setlist();
   }, []);
 
   return (

@@ -7,12 +7,9 @@ function Cards({ Nombre, Estado, Especie, Genero, Foto }) {
         <img src={Foto} alt={Nombre} className='img-fluid'/>
     <div className="content">
       <h2>{Nombre}</h2>
-      <small>Estado:</small>
-      <p>{Estado}</p>
-      <small>Especie:</small>
-      <p> {Especie}</p>
-      <small>Genero:</small>
-      <p>{Genero}</p>
+      <p><strong className='fw-bold'>Estado:</strong> {Estado}</p>
+      <p><strong className='fw-bold'>Especie:</strong> {Especie}</p>
+      <p><strong className='fw-bold'>Genero:</strong> {Genero}</p>
       </div>
     </div>
   );
